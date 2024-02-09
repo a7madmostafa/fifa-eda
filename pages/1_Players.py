@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from helper import interest_insights, top10, bottom10, top10_viz
 
-df = pd.read_csv('../FIFA19_APP/fifa_eda.csv')
+df = pd.read_csv('fifa_eda.csv')
 df.dropna(inplace=True)
 
 interest = st.selectbox('Select Your Interest ', ['Age', 'Overall', 'Potential', 'Value', 'Wage', 'Height', 'Weight', 'Release Clause'])
