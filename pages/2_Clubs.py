@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 st.set_page_config(layout="wide", page_title="Club Insights", page_icon=":soccer:")
 
-df = pd.read_csv('../FIFA19_APP/fifa_eda.csv')
+df = pd.read_csv('fifa_eda.csv')
 df.dropna(inplace=True)
 
 club = st.selectbox('Select Your Club ', df['Club'].unique())
